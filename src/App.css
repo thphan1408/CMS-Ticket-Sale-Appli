@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #F9F6F4;   */
-    font-family: 'Montserrat', sans-serif;
 }
 
 #root{
     height: 100%;
+    background-color: #F9F6F4;
 }
 
 :root{
@@ -33,7 +32,6 @@
     font-size: 18px;
     line-height: 26px;
     /* identical to box height, or 144% */
-    
     letter-spacing: 0.015em;
 }
 
@@ -41,4 +39,5 @@
     color: #1E0D03;
     opacity: 0.6;
 }
+
 

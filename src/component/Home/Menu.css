@@ -1,12 +1,7 @@
-a{
-    opacity: 0.6;
-    letter-spacing: 0.015em;
-    color: #1E0D03;
-}
-
-.Menu{
-    width: 252px;
-    height: 289px;
+.Menu__list{
+    margin-top: 74px;
+    padding-left: 33px;
+    line-height: 26px;
 }
 
 .Logo__insight{
@@ -14,36 +9,11 @@ a{
     margin-left: 33px;
 }
 
-.Menu__list{
-    margin-top: 74px;
-    padding-left: 33px;
-    line-height: 26px;
-}
-
-
-.Menu__list.Frame_list li{
-    list-style: none;
-    width: 252px;
-    height: 56px;
-    border-radius: 8px;
-    font-size: 18px;
-    line-height: 24px;
-
-    margin-left: 10px;
-}
-
-.Tag__link{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-}
-
 /* Menu list ul li*/
 
 .Frame__list > li {
     display: flex;
+    margin-bottom: 23px;
 }
 
 .Frame__list li{
@@ -57,39 +27,59 @@ a{
 
 .Frame__list  li  a {
     display: block;
+    opacity: 0.6;
+    letter-spacing: 0.015em;
+    color: #1E0D03;
 }
 
 .Frame__list > li:hover > a {
     color: #fff;
-    background-color: #FFB800;
+    background-color:#FFB800;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 16px 15px 24px;
+    gap: 12px;
+    width: 252px;
+    height: 56px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
 }
 
-.Frame__list li:hover .Sub__tag {
+.Frame__list > li:hover .Sub__tag {
     display: block;
-
+    color: #fff;
     background-color: #FFB800;
+    border-radius: 8px;
+    padding: 15px 16px 15px 24px;
+    gap: 12px;
+    width: 90%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 .Frame__list .Sub__tag{
     display: none;   
     position: absolute;
-    min-width: 160px;
-    top: 67.2%;
-    left: 30%;
-    border-radius: 8px;
+    top: 100%;
+    left: 10%;
+    list-style: none;
+    text-align: center;
 }
 
 .icon{
-    padding-right: 15px;
+    display: inline-block;
+    padding: 0 15px 5px 0px;
     opacity: .6;
     background: none;
-
-}
-
-.icon__home{
-    padding-right: 15px;
-    opacity: .6;
-    background: none;
+    line-height: 26px;
 }
 
 /* Search */
