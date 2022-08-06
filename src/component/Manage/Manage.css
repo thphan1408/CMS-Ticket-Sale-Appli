@@ -1,0 +1,53 @@
+.Content__manage .Search__list{
+    margin: 32px 0px 0px 48px;
+    width: 437px;
+    height: 48px;
+    background: #EDE6E6;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 11px;
+    opacity: 30%;
+    font-style: italic;
+}
+
+.Nav__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Search__icon{
+
+}
+
+.Filter{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 48px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.Content__list .Filter__list{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -54px;
+    margin-right: 36px;
+}
+
+.Content__list ul li {
+    padding: 5px 24px;
+    color: #FF993C;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+
+.Ticket__list{
+    margin: 31px 24px 0px 24px;
+}

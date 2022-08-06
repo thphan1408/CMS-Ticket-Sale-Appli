@@ -21,33 +21,34 @@ export default function menu() {
 
         <div className="Menu__list">
           <ul className="Frame__list">
-            <li className="Tag__block">
+            <li>
                 <NavLink className="Tag__link active" to="/Home">
                     <img className="icon__home" src={icon1} /> 
                     Trang chủ
                 </NavLink>
             </li>
 
-            <li className="Tag__block">
+            <li>
               
               <NavLink to="/Manage" > <img className="icon" src={icon2} /> Quản lý vé </NavLink>
             </li>
 
-            <li className="Tag__block">
+            <li>
               <img className="icon" src={icon3} />
               <a href="#">Đổi soát vé</a>
             </li>
 
-            <li className="Tag__block">
+            <li>
               <img className="icon" src={icon4} />
               Cài đặt
-            </li>
-
                 <ul className="Sub__tag">
                   <li className="Tag__block" style={{marginLeft:"30px"}}>
                     <a href="#">Gói dịch vụ</a>
                   </li>
                 </ul>
+            </li>
+
+
           </ul> 
         </div>
       </nav>

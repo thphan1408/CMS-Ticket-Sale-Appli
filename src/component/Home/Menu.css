@@ -20,10 +20,6 @@ a{
     line-height: 26px;
 }
 
-ul li {
-    list-style: none;
-    line-height: 28px;
-}
 
 .Menu__list.Frame_list li{
     list-style: none;
@@ -36,14 +32,6 @@ ul li {
     margin-left: 10px;
 }
 
-.Frame__list{
-
-}
-
-nav a.active{
-
-}
-
 .Tag__link{
     font-family: 'Montserrat';
     font-style: normal;
@@ -52,16 +40,43 @@ nav a.active{
     line-height: 26px;
 }
 
-.Tag__block:hover{
+/* Menu list ul li*/
+
+.Frame__list > li {
     display: flex;
-    padding: 8px 15px;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
+}
+
+.Frame__list li{
+    position: relative;
+}
+
+.Frame__list > li > a{
+    color: #1E0D03;
+    text-transform: uppercase;
+}
+
+.Frame__list  li  a {
+    display: block;
+}
+
+.Frame__list > li:hover > a {
+    color: #fff;
     background-color: #FFB800;
+}
+
+.Frame__list li:hover .Sub__tag {
+    display: block;
+
+    background-color: #FFB800;
+}
+
+.Frame__list .Sub__tag{
+    display: none;   
+    position: absolute;
+    min-width: 160px;
+    top: 67.2%;
+    left: 30%;
     border-radius: 8px;
-    /* gap: 12px;    */
-    min-width: 190px;
 }
 
 .icon{
@@ -190,3 +205,4 @@ a:hover {
     font-size: 26px;
     font-weight: 700;
 }
+

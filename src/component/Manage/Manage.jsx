@@ -1,6 +1,10 @@
 import React from 'react';
 import { Space, Table, Tag } from 'antd';
+import "./Manage.css"
 
+// Import icons, images
+import filter from "../../assets/icons/Filter.svg"
+import search from "../../assets/icons/Search.svg"
 
 const columns = [
     {
@@ -25,15 +29,25 @@ const data = [
 
 export default function Manage() {
     return (
-      <div className='content'>
+      <div className='Content__manage'>
           <h1 style={{ marginLeft:24}}>Danh sách vé</h1>
-          
-          {/* <input className='SearchList' type="search" placeholder='Search' /> <img className='SearchIcon' src={Search} /> */}
-          <ul className='Filter'>
-              {/* <li><button><img src={Filter} />Lọc vé</button></li> */}
-              <li><button>Xuất file </button></li>
-          </ul>
-          <Table className="TicketList" columns={columns} dataSource={data} />
+        <div className="Nav__content">
+
+          <div className="Search">
+            <input className='Search__list' type="search" placeholder='Search' /> 
+            <img className='Search__icon' src={search} />
+          </div>
+
+
+          <div className="Filter">
+            <ul className='Filter__list'>
+                <li><button><img src={filter} />Lọc vé</button></li>
+                <li><button>Xuất file </button></li>
+            </ul>
+          </div>
+
+        </div>
+          <Table className="Ticket__list" columns={columns} dataSource={data} />
       </div>
     )
   }
