@@ -1,0 +1,192 @@
+a{
+    opacity: 0.6;
+    letter-spacing: 0.015em;
+    color: #1E0D03;
+}
+
+.Menu{
+    width: 252px;
+    height: 289px;
+}
+
+.Logo__insight{
+    margin-top: 17px;
+    margin-left: 33px;
+}
+
+.Menu__list{
+    margin-top: 74px;
+    padding-left: 33px;
+    line-height: 26px;
+}
+
+ul li {
+    list-style: none;
+    line-height: 28px;
+}
+
+.Menu__list.Frame_list li{
+    list-style: none;
+    width: 252px;
+    height: 56px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 24px;
+
+    margin-left: 10px;
+}
+
+.Frame__list{
+
+}
+
+nav a.active{
+
+}
+
+.Tag__link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.Tag__block:hover{
+    display: flex;
+    padding: 8px 15px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #FFB800;
+    border-radius: 8px;
+    /* gap: 12px;    */
+    min-width: 190px;
+}
+
+.icon{
+    padding-right: 15px;
+    opacity: .6;
+    background: none;
+
+}
+
+.icon__home{
+    padding-right: 15px;
+    opacity: .6;
+    background: none;
+}
+
+/* Search */
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search__text{
+    width: 437px;
+    height: 48px;
+    background: #EDE6E6;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 11px;
+    opacity: 30%;
+    font-style: italic;
+  
+}
+.SearchIcon{
+    margin-left: -49px;
+}
+
+.Search__btn {
+    border: none
+}
+
+/* Notify, Ring */
+.AccMailNoti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+.search-noti{
+    display: flex;
+    justify-content: space-between;
+}
+.AccMailNoti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+.AccMailNoti > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 29px;
+    margin-right: 32px;
+}
+.AccMailNoti ul li {
+    list-style: none;
+    display: inline-block;
+   
+}
+.Account{
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background: url("../../assets/icons/avt.png"); 
+}
+
+/* Content   */
+.Content{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    min-height: 1080px;
+    margin-right: 32px;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.Content h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    padding-left: 24px;
+    padding-top: 24px;
+}
+
+a:hover {
+    color: #1E0D03;
+}
+/* Chart */
+.chart {
+    margin: 27px 55px 73px 24px;
+}
+.date-picker {
+
+}
+.date-picker2 {
+    margin-left: 24px ;
+    margin-top: 83px;
+}
+
+.Content__wapper{
+    margin-left: 26px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.Sub__content{
+    line-height: 30px;
+    margin-left: 26px;
+    font-size: 26px;
+    font-weight: 700;
+}

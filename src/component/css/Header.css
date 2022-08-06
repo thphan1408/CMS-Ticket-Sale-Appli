@@ -1,0 +1,69 @@
+.ant-input-wrapper.ant-input-group{
+    border-radius: 10px;
+    border: 1px solid #2d9fd9;
+    color: #ffffff;
+    /* width: 250px; */
+    /* height: 30px; */
+    padding-left: 10px;
+    background-color: white;
+}
+input.ant-input {
+    border: none;
+}
+.ant-input-search .ant-input:hover, .ant-input-search .ant-input:focus {
+    border-color: white !important;
+    box-shadow: white !important
+}
+button.ant-btn.ant-btn-default.ant-btn-icon-only.ant-input-search-button {
+    border: none;
+    background-color: white;
+}
+
+
+.Content h2 {
+    display: contents;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 20px ;
+}
+
+.ant-picker.date-picker{
+    position: absolute;
+    right: 0;
+    margin: -30px 30px;
+}
+
+.header{
+    position: relative;
+    padding-top: 1%;
+}
+
+.Header__icon,
+.Header__avt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.Header__icon img{
+    margin-left: 29px;
+}
+
+.Header__avt img{
+    width: 48px;
+    height: 48px;
+    padding-left: 10px;
+}
+
+.AccMailNoti{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
