@@ -56,4 +56,14 @@
     opacity: 0.6;
 }
 
+/* Container for all component */
+.Container{
+    position: relative;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    min-height: 1080px;
+    margin-right: 32px;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
 

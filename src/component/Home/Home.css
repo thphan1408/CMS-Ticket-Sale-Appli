@@ -1,40 +1,54 @@
-/* Container  */
-.Container{
-    background-color: #FFFFFF;
-    margin-top: 20px;
-    min-height: 1080px;
-    margin-right: 32px;
-    border-radius: 24px;
-    margin-bottom: 32px;
-}
-
 a:hover {
     color: #1E0D03;
 }
 
 .Content{
-    margin: 24px 50px;
+    padding: 24px 50px;
 }
 
 /* Chart */
-.chart {
+.Chart {
     margin: 27px 55px 73px 24px;
+}
+
+.canvas{
+    display: block;
+    box-sizing: border-box;
+    height: 500px;
+    width: 100%;
 }
 
 .Header__chart{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .Content__chart{
-    margin: 24px 32px;
+    margin-left: 32px;
 }
+
+.Chart__table{
+    margin-left: 32px;
+    min-width: 100%;
+}
+
 
 .Date__picker--chart{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 63px;
+}
+
+
+/* Content__family */
+
+.Content__family
+{
+    position: absolute;
+    top: 79%;
+    margin-top: 40px;
 }
 
 .date-picker2 {
@@ -53,75 +67,4 @@ a:hover {
     margin-left: 26px;
     font-size: 26px;
     font-weight: 700;
-}
-
-/* Search */
-.Search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Search__text{
-    width: 437px;
-    height: 48px;
-    background: #EDE6E6;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    padding-left: 11px;
-    opacity: 30%;
-    font-style: italic;
-  
-}
-.SearchIcon{
-    margin-left: -49px;
-}
-
-.Search__btn {
-    border: none
-}
-
-/* Notify, Ring */
-.AccMailNoti{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-}
-.search-noti{
-    display: flex;
-    justify-content: space-between;
-}
-.AccMailNoti{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
-}
-.AccMailNoti > ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    column-gap: 29px;
-    margin-right: 32px;
-}
-.AccMailNoti ul li {
-    list-style: none;
-    display: inline-block;
-   
-}
-.Account{
-    width: 48px;
-    height: 48px;
-    border-radius: 30px;
-    background: url("../../assets/icons/avt.png"); 
-}
-
-.AccMailNoti{
-    position: absolute;
-    top: 0;
-    right: 0;
 }

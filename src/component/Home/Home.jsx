@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { DatePicker, Space } from "antd";
 import { Line } from 'react-chartjs-2';
-import "../css/Header.css"
+import "../Layout/Header.css"
 import "../Home/Home.css"
 import "../../App.css"
 
@@ -37,37 +37,42 @@ export default function Home() {
     <div className="Container">
       <h1 className="Content Bold-36">Thống kê</h1>
       
+      <div className='Chart'>
+          <div className="Header__chart">
+            <h2 className="Content__chart Semibold-18">Doanh thu</h2>
+            
+            <Space direction="vetical">
+              <DatePicker className='Date__picker--chart' onChange={onChange} />
+            </Space>
+          </div>
 
-     
-      <div className='chart'>
-        <div className="Header__chart">
-          <h2 className="Content__chart Semibold-18">Doanh thu</h2>
-          
-          <Space direction="vetical">
-            <DatePicker className='Date__picker--chart' onChange={onChange} />
+          <div className="Chart__table Canvas">
+          <Line data={data} options={{
+                plugins: {
+                  legend: { 
+                    display: false
+                  }
+            },
+            scales: {
+              x:{
+                grid: {
+                  display: false
+                  }
+                }
+            }
+            }}/>
+          </div>
+      </div>
+
+        <div className="Content__family">
+          <p className="Content__wapper">Tổng doanh thu theo tuần</p> 
+          <p className="Sub__content"><span>525.145.000</span> đồng</p>
+            
+          <Space direction="vertical">
+            <DatePicker className='date-picker2' onChange={onChange} />
           </Space>
         </div>
 
-          <Line data={data} options={{
-              plugins: {
-                legend: { 
-                  display: false
-                }
-          },
-          scales: {
-            x:{
-              grid: {
-                display: false
-                }
-              }
-          }
-          }}/>
-        </div>
-          <p className="Content__wapper">Tổng doanh thu theo tuần</p> 
-          <p className="Sub__content"><span>525.145.000</span> đồng</p>
-            <Space direction="vertical">
-              <DatePicker className='date-picker2' onChange={onChange} />
-            </Space>
     </div>
   );
 }

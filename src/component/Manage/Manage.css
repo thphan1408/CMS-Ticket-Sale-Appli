@@ -1,53 +1,100 @@
-.Content__manage .Search__list{
-    margin: 32px 0px 0px 48px;
-    width: 437px;
-    height: 48px;
-    background: #EDE6E6;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    padding-left: 11px;
-    opacity: 30%;
-    font-style: italic;
-}
+/* Navigation css */
 
-.Nav__content{
+.Navigation__content{
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-.Search__icon{
-
+.Content{
+    padding: 24px 24px;
 }
+
+/* Sub__content */
+.Sub__content{
+    position: absolute;
+    display: flex;
+    top: 54%;
+    left: 0;
+    min-width: 100%;
+}
+
+.Search--left{
+    display: flex;
+    margin-top: 32px;
+    line-height: 26px;
+}
+
+/* Filter */
 
 .Filter{
-    display: flex;
-    flex-direction: row;
-    margin: 10px 48px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
+    position: absolute;
+    top: 24%;
+    right: 4%;
+    padding: 11px 24px;
 }
 
-.Content__list .Filter__list{
+.Filter__list{
     display: flex;
-    justify-content: flex-end;
-    margin-top: -54px;
-    margin-right: 36px;
-}
-
-.Content__list ul li {
-    padding: 5px 24px;
+    list-style: none;
     color: #FF993C;
-    font-size: 18px;
-    line-height: 26px;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid;
+}
+
+.Filter__btn,
+.Print__btn{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 1px solid #FF993C;
+    margin-left: 10px;
     border-radius: 6px;
+    padding: 11px 24px;
+    line-height: 26px;
+}
+
+.Filter__icon{
     margin-right: 12px;
 }
 
+    /* .Filter__btn:hover,
+    .Print__btn:hover{
+        color: #FFFFFF;
+        background-color: #FFB800;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #FFFFFF;
+    } */
+
+/* Table__list */
+.Table__list{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 31px 5px;
+}
+
 .Ticket__list{
-    margin: 31px 24px 0px 24px;
+    padding: 21px 24px;
+    /* border-radius: 5px; */
+}
+
+.ant-table-pagination.ant-pagination {
+    margin-top: 53px !important;
+}
+
+.ant-table-pagination-right {
+    display: flex;
+    justify-content: center !important;
+}
+
+.ant-pagination-item-active,
+.ant-pagination-item-active a {
+    font-weight: 500;
+    background: #fff;
+    border-color: #FF993C !important;
+    color: #FF993C !important;
 }

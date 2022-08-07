@@ -1,3 +1,11 @@
+.ant-col-4{
+    background-color: #F9F6F4;
+}
+
+.ant-col-20{
+    background-color: #F9F6F4;
+}
+
 .Menu__list{
     margin-top: 74px;
     padding-left: 33px;
@@ -32,8 +40,9 @@
     color: #1E0D03;
 }
 
-.Frame__list > li:hover > a,
-.Frame__list .Sub__tag li:hover a{
+
+.Frame__list .Sub__tag li:hover a,
+.Frame__list > li:hover > a{
     color: #fff;
     background-color:#FFB800;
     border-radius: 8px;
@@ -52,6 +61,7 @@
 
 .Frame__list > li:hover .Sub__tag {
     display: block;
+    min-width: 68%;
 }
 
 .Frame__list .Sub__tag{

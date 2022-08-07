@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import "../Home/Menu.css";
+import "./Menu.css";
 import "../../App.css";
 
 // import logo
@@ -16,7 +16,9 @@ export default function menu() {
     <div className="Menu">
       <nav>
         <div className="Logo__insight">
-          <img className="Logo" src={logo} alt="insight logo" />
+          <NavLink to="/Home">
+            <img className="Logo" src={logo} alt="insight logo" />  
+          </NavLink>
         </div>  
 
         <div className="Menu__list">
@@ -35,7 +37,7 @@ export default function menu() {
 
             <li>
               
-              <NavLink to="" className="Medium-18"> <img className="icon" src={icon3} /> Đổi soát vé</NavLink>
+              <NavLink to="" className="Medium-18"> <img className="icon" src={icon3} /> Đối soát vé</NavLink>
             </li>
 
             <li className="Medium-18">
@@ -55,6 +57,12 @@ export default function menu() {
           </ul> 
         </div>
       </nav>
+
+      {/* <footer>
+        <div className="">
+          Thành Phan 
+        </div>
+      </footer> */}
     </div>
   );
 }

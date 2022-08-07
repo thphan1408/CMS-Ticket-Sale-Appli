@@ -1,0 +1,121 @@
+.ant-picker.date-picker{
+    position: absolute;
+    right: 0;
+}
+
+/* Header */
+.Header{
+    position: relative;
+    padding-top: 1%;
+}
+
+.Header__icon,
+.Header__avt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.Header__icon img{
+    margin-left: 29px;
+}
+
+.Header__avt img{
+    width: 48px;
+    height: 48px;
+    padding-left: 10px;
+}
+
+/* Notify, Ring */
+.AccMailNoti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+
+.icon__size--s{
+    width: 20px;
+}
+
+.AccMailNoti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+.AccMailNoti > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 29px;
+    margin-right: 32px;
+}
+.AccMailNoti ul li {
+    list-style: none;
+    display: inline-block;
+   
+}
+
+.Account__icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+}
+
+.AccMailNoti{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Search */
+.Search {
+    position: relative;
+    width: 437px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input.Search__text{
+    background: #EDEDED;
+    border: none;
+    min-width: 100%;
+    height: 48px;
+    border-radius: 12px;
+}
+
+::placeholder{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.3;   
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    padding-left: 16px;
+    margin: 0 auto;
+}
+
+.Search__btn {
+    cursor: pointer;
+    border: none;
+    height: 100%;
+}
+
+.Search__icon{
+    position: absolute;
+    top: 25%;
+    left: 89%;
+    z-index: 999;
+}
