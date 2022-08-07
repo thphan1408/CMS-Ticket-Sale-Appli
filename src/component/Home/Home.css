@@ -1,0 +1,127 @@
+/* Container  */
+.Container{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    min-height: 1080px;
+    margin-right: 32px;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+a:hover {
+    color: #1E0D03;
+}
+
+.Content{
+    margin: 24px 50px;
+}
+
+/* Chart */
+.chart {
+    margin: 27px 55px 73px 24px;
+}
+
+.Header__chart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Content__chart{
+    margin: 24px 32px;
+}
+
+.Date__picker--chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 63px;
+}
+
+.date-picker2 {
+    margin-left: 24px ;
+}
+
+.Content__wapper{
+    margin-left: 26px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.Sub__content{
+    line-height: 30px;
+    margin-left: 26px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Search */
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search__text{
+    width: 437px;
+    height: 48px;
+    background: #EDE6E6;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 11px;
+    opacity: 30%;
+    font-style: italic;
+  
+}
+.SearchIcon{
+    margin-left: -49px;
+}
+
+.Search__btn {
+    border: none
+}
+
+/* Notify, Ring */
+.AccMailNoti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+.search-noti{
+    display: flex;
+    justify-content: space-between;
+}
+.AccMailNoti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+.AccMailNoti > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 29px;
+    margin-right: 32px;
+}
+.AccMailNoti ul li {
+    list-style: none;
+    display: inline-block;
+   
+}
+.Account{
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background: url("../../assets/icons/avt.png"); 
+}
+
+.AccMailNoti{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

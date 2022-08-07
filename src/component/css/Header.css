@@ -19,26 +19,13 @@ button.ant-btn.ant-btn-default.ant-btn-icon-only.ant-input-search-button {
     background-color: white;
 }
 
-
-.Content h2 {
-    display: contents;
-    position: relative;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 30px;
-    padding-left: 24px;
-    padding-top: 32px;
-    padding-bottom: 20px ;
-}
-
 .ant-picker.date-picker{
     position: absolute;
     right: 0;
-    margin: -30px 30px;
+    /* margin: -78px 63px; */
 }
 
+/* Header */
 .header{
     position: relative;
     padding-top: 1%;
@@ -60,10 +47,4 @@ button.ant-btn.ant-btn-default.ant-btn-icon-only.ant-input-search-button {
     width: 48px;
     height: 48px;
     padding-left: 10px;
-}
-
-.AccMailNoti{
-    position: absolute;
-    top: 0;
-    right: 0;
 }

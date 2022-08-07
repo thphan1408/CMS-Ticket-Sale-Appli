@@ -25,6 +25,14 @@
 /* identical to box height, or 144% */
 }
 
+.Bold-36{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+
 .Medium-18{
     font-family: 'Montserrat';
     font-style: normal;
@@ -33,6 +41,14 @@
     line-height: 26px;
     /* identical to box height, or 144% */
     letter-spacing: 0.015em;
+}
+
+.Semibold-18{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .Color-text{

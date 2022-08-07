@@ -39,8 +39,11 @@ export default function menu() {
             </li>
 
             <li className="Medium-18">
-              <img className="icon" src={icon4} />
-              Cài đặt
+              <NavLink to="#">
+                <img className="icon" src={icon4} />
+                Cài đặt
+              </NavLink>
+ 
                 <ul className="Sub__tag">
                   <li>
                     <NavLink to="#" className="Medium-18">Gói dịch vụ</NavLink>
