@@ -35,9 +35,11 @@ const columns = [
               {tags.map((tag) => {
                 let color = tag.length > 5 ? 'geekblue' : 'green';
       
-                if (tag === 'loser') {
+                if (tag === 'Hết hạn') {
                   color = 'volcano';
                 }
+                else if(tag === 'Chưa sử dụng')
+                  color = 'green'
       
                 return (
                   <Tag color={color} key={tag}>
@@ -78,17 +80,23 @@ const data = [
     },
     {
       key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park',
-      tags: ['loser'],
+      number: 2,
+      code: 'ALTOJMNB',
+      ticketNumber: 236784631642,
+      tags: ['Chưa sử dụng'],
+      useDate: '14/04/2021',
+      releaseDate: '14/04/2021',
+      gate: '-'
     },
     {
       key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park',
-      tags: ['cool', 'teacher'],
+      number: 3,
+      code: 'ALTQTYJH',
+      ticketNumber: 487621489474,
+      tags: ['Hết hạn'],
+      useDate: '14/04/2021',
+      releaseDate: '14/04/2021',
+      gate: '-'
     },
 ];
 

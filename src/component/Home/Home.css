@@ -11,13 +11,6 @@ a:hover {
     margin: 27px 55px 73px 24px;
 }
 
-.canvas{
-    display: block;
-    box-sizing: border-box;
-    height: 500px;
-    width: 100%;
-}
-
 .Header__chart{
     display: flex;
     justify-content: space-between;
@@ -35,10 +28,8 @@ a:hover {
 
 
 .Date__picker--chart{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 10px 63px;
+    margin: 0 !important;
 }
 
 
@@ -51,20 +42,30 @@ a:hover {
     margin-top: 40px;
 }
 
-.date-picker2 {
-    margin-left: 24px ;
-}
-
 .Content__wapper{
-    margin-left: 26px;
+    margin-left: 24px;
     font-size: 14px;
     line-height: 22px;
     font-weight: 500;
 }
 
-.Sub__content{
+.Sub__content--family{
     line-height: 30px;
-    margin-left: 26px;
-    font-size: 26px;
-    font-weight: 700;
+    margin-left: 24px;
+}
+
+.date-picker2 {
+    margin-top: 63px !important;
+    margin-left: 32px  !important;
+}
+
+/* Chart-family */
+
+.Chart-family{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 90%;
+    left: 35%;
+    right: 35%;
 }

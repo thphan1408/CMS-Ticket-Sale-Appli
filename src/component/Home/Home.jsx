@@ -3,7 +3,10 @@ import { DatePicker, Space } from "antd";
 import { Line } from 'react-chartjs-2';
 import "../Layout/Header.css"
 import "../Home/Home.css"
+import FamilyChart from '../Chart Family/FamilyChart';
+import EventChart from '../Chart Family/EventChart';
 import "../../App.css"
+
 
 
 import { Chart as ChartJS, Title, Tooltip, LineElement, Legend, CategoryScale, LinearScale, PointElement, Filler } from 'chart.js';
@@ -64,15 +67,35 @@ export default function Home() {
           </div>
       </div>
 
-        <div className="Content__family">
-          <p className="Content__wapper">Tổng doanh thu theo tuần</p> 
-          <p className="Sub__content"><span>525.145.000</span> đồng</p>
+      <div className="Content__family">
+          <p className="Content__wapper Medium-14">Tổng doanh thu theo tuần</p> 
+          <p className="Sub__content--family Medium-14"> <span className="Bold-24">525.145.000</span> đồng</p>
             
-          <Space direction="vertical">
-            <DatePicker className='date-picker2' onChange={onChange} />
-          </Space>
-        </div>
+          <div className="date-picker2">
+            <Space direction="vertical">
+              <DatePicker className='' onChange={onChange} />
+            </Space>
+          </div>  
 
+          <div className='Chart-family'>
+          <div className='FamilyPackage'>
+            <p>Gói gia đình</p>
+            <FamilyChart />
+          </div>
+
+          <div className='EventPackage'>
+            <p>Gói sự kiện</p>
+            <EventChart />
+          </div>
+
+          <div className='Sub__content--chart-family'>
+            <ul >
+              <li><span className='usedTickets'></span>Vé đã sử dụng</li>
+              <li><span className='unusedTickets'></span>Vé chưa sử dụng</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

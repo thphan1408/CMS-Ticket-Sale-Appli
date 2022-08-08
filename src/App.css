@@ -51,6 +51,22 @@
     line-height: 28px;
 }
 
+.Medium-14{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.Bold-24{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
 .Color-text{
     color: #1E0D03;
     opacity: 0.6;
