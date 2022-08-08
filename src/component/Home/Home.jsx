@@ -70,31 +70,31 @@ export default function Home() {
       <div className="Content__family">
           <p className="Content__wapper Medium-14">Tổng doanh thu theo tuần</p> 
           <p className="Sub__content--family Medium-14"> <span className="Bold-24">525.145.000</span> đồng</p>
-            
+
           <div className="date-picker2">
-            <Space direction="vertical">
-              <DatePicker className='' onChange={onChange} />
-            </Space>
+              <Space direction="vertical">
+                <DatePicker className='' onChange={onChange} />
+              </Space>
           </div>  
-
+            
           <div className='Chart-family'>
-          <div className='FamilyPackage'>
-            <p>Gói gia đình</p>
-            <FamilyChart />
-          </div>
+              <div className='FamilyPackage'>
+                <p>Gói gia đình</p>
+                <FamilyChart />
+              </div>
 
-          <div className='EventPackage'>
-            <p>Gói sự kiện</p>
-            <EventChart />
-          </div>
+              <div className='EventPackage'>
+                <p>Gói sự kiện</p>
+                <EventChart />
+              </div>
 
-          <div className='Sub__content--chart-family'>
-            <ul >
-              <li><span className='usedTickets'></span>Vé đã sử dụng</li>
-              <li><span className='unusedTickets'></span>Vé chưa sử dụng</li>
-            </ul>
+              <div className='Sub__content--chart-family'>
+                <ul className="Info__list">
+                  <li> <div className="Block Block__used"></div> <span className='Text__info Regular-14'>Vé đã sử dụng</span></li>
+                  <li> <div className="Block Block__unused"></div> <span className='Text__info Regular-14'>Vé chưa sử dụng</span></li>
+                </ul>
+              </div>
           </div>
-        </div>
       </div>
     </div>
   );

@@ -1,7 +1,3 @@
-.ant-picker{
-
-}
-
 /* Header */
 .Header{
     position: relative;
@@ -27,7 +23,7 @@
 }
 
 /* Notify, Ring */
-.AccMailNoti{
+.AccMailNotify{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,21 +34,21 @@
     width: 20px;
 }
 
-.AccMailNoti{
+.AccMailNotify{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 24px;
 }
-.AccMailNoti > ul {
+.AccMailNotify > ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     column-gap: 29px;
     margin-right: 32px;
 }
-.AccMailNoti ul li {
+.AccMailNotify ul li {
     list-style: none;
     display: inline-block;
    
@@ -64,7 +60,7 @@
     border-radius: 30px;
 }
 
-.AccMailNoti{
+.AccMailNotify{
     position: absolute;
     top: 0;
     right: 0;

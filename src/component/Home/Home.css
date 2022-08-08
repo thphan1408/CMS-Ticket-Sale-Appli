@@ -3,12 +3,12 @@ a:hover {
 }
 
 .Content{
-    padding: 24px 50px;
+    padding: 24px 58px;
 }
 
 /* Chart */
 .Chart {
-    margin: 27px 55px 73px 24px;
+    margin: 27px 55px 73px 0px;
 }
 
 .Header__chart{
@@ -37,9 +37,9 @@ a:hover {
 
 .Content__family
 {
-    position: absolute;
+    /* position: absolute;
     top: 79%;
-    margin-top: 40px;
+    margin-top: 40px; */
 }
 
 .Content__wapper{
@@ -62,10 +62,42 @@ a:hover {
 /* Chart-family */
 
 .Chart-family{
-    position: absolute;
     display: flex;
-    justify-content: space-around;
-    top: 90%;
-    left: 35%;
-    right: 35%;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Sub__content--chart-family{
+
+}
+
+.Info__list{
+    list-style: none;
+}
+
+.Info__list > li{
+    display: flex;
+    margin-right: 8px;
+}
+
+.Text__info{
+    display: flex;
+    margin-bottom: 16px;
+    margin-left: 8px;
+}
+
+.Block{
+    border: 1px solid #fff;
+    width: 44px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.Block__used{
+    background-color: var(--ellipse-2-color);
+}
+
+.Block__unused{
+    background-color: var(--ellipse-3-color);
 }

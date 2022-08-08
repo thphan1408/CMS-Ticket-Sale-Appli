@@ -19,7 +19,7 @@ const data = {
 export default function EventChart() {
   return (
     <div className='EventChart'>
-    <Doughnut data={data}/>
-</div>
+      <Doughnut data={data}/>
+    </div>
   )
 }   

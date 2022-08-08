@@ -24,8 +24,8 @@ export default function Home() {
         </Col>
         
         <Col  span={14}>
-        <div className="AccMailNoti">
-          <ul className="AccMailNoti__list">
+        <div className="AccMailNotify">
+          <ul className="AccMailNotify__list">
               <li>
                 <NavLink to="">
                     <img className="icon__size--s" src={icon1} />
