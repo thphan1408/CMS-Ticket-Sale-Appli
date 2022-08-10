@@ -1,0 +1,32 @@
+.btn{
+    position: absolute;
+    top: 24%;
+    right: 4%;
+    padding: 11px 24px;
+    display: flex;
+}
+
+.Print__btn,
+.Add__Ticket__btn
+{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 1px solid #FF993C;
+    margin-left: 10px;
+    border-radius: 6px;
+    padding: 11px 24px;
+    line-height: 26px;  
+    color: #FF993C;
+}
+
+.Print__btn:hover,
+.Add__Ticket__btn:hover
+{
+    background-color: #FFB800;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}

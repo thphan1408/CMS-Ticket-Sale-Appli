@@ -10,6 +10,7 @@ import icon1 from "../../assets/icons/Vector.svg";
 import icon2 from "../../assets/icons/Vector2.svg";
 import icon3 from "../../assets/icons/Vector3.svg";
 import icon4 from "../../assets/icons/Vector4.svg";
+import copy from "../../assets/icons/Copy.svg"
 
 export default function menu() {
   return (
@@ -37,11 +38,11 @@ export default function menu() {
 
             <li>
               
-              <NavLink to="" className="Medium-18"> <img className="icon" src={icon3} /> Đối soát vé</NavLink>
+              <NavLink to="/CheckTicket" className="Medium-18"> <img className="icon" src={icon3} /> Đối soát vé</NavLink>
             </li>
 
             <li className="Medium-18">
-              <NavLink to="#">
+              <NavLink to="/setting">
                 <img className="icon" src={icon4} />
                 Cài đặt
               </NavLink>
@@ -57,12 +58,9 @@ export default function menu() {
           </ul> 
         </div>
       </nav>
-
-      {/* <footer>
-        <div className="">
-          Thành Phan 
-        </div>
-      </footer> */}
+        {/* <div className="Footer">
+            <span className="Footer__text Regular-14"> Copyright <img src={copy} alt="copy" /> 2020 Alta Software </span>  
+        </div> */}
     </div>
   );
 }

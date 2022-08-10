@@ -6,10 +6,16 @@
     background-color: #F9F6F4;
 }
 
+.Menu{
+    position: fixed;
+}
+
 .Menu__list{
     margin-top: 74px;
     padding-left: 33px;
     line-height: 26px;
+    width: 252px;
+    height: 56px;
 }
 
 .Logo__insight{
@@ -55,12 +61,11 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    opacity: none;
 }
 
 .Frame__list > li:hover .Sub__tag {
     display: block;
-    min-width: 68%;
+    min-width: 0%;
 }
 
 .Frame__list .Sub__tag{
@@ -79,6 +84,4 @@
     background: none;
     line-height: 26px;
 }
-
-
 

@@ -26,10 +26,10 @@ export default function Home() {
     labels: ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'CN'],
     datasets: [ 
       {
-        data: [130, 176, 210, 240, 200, 260, 194,], 
+        data: [140, 180, 220, 260], 
         backgroundColor: 'rgba(250, 160, 95, 0.16)',
         borderColor: 'rgba(255, 138, 72, 1)',
-        tension: .6,
+        tension: .4,
         fill: true,
       }
   
@@ -41,7 +41,7 @@ export default function Home() {
       <h1 className="Content Bold-36">Thống kê</h1>
       
       <div className='Chart'>
-          <div className="Header__chart">
+          <div className="Header__chart">   
             <h2 className="Content__chart Semibold-18">Doanh thu</h2>
             
             <Space direction="vetical">
@@ -49,8 +49,9 @@ export default function Home() {
             </Space>
           </div>
 
-          <div className="Chart__table Canvas">
+          <div className="Chart__table">
           <Line data={data} options={{
+
                 plugins: {
                   legend: { 
                     display: false
@@ -61,7 +62,7 @@ export default function Home() {
                 grid: {
                   display: false
                   }
-                }
+                } 
             }
             }}/>
           </div>
@@ -79,12 +80,12 @@ export default function Home() {
             
           <div className='Chart-family'>
               <div className='FamilyPackage'>
-                <p>Gói gia đình</p>
+                <p className="Semibold-18">Gói gia đình</p>
                 <FamilyChart />
               </div>
 
               <div className='EventPackage'>
-                <p>Gói sự kiện</p>
+                <p className="Semibold-18">Gói sự kiện</p>
                 <EventChart />
               </div>
 

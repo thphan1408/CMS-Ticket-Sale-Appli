@@ -16,7 +16,7 @@ export default function Home() {
       <Row>
         <Col span={10}>
           <div className="Search">
-                <input className='Search__text' type="text" placeholder='Search' /> 
+                <input className='Search__text' type="search" placeholder='Search' /> 
                 <button className='Search__btn'>
                   <img className='Search__icon' src={search} />
                 </button>

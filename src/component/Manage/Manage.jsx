@@ -107,7 +107,7 @@ export default function Manage() {
           <h1 className='Content Bold-36'>Danh sách vé</h1>
           <div className="Sub__content">  
             <div className="Search Search--left">
-              <input className='Search__text' type="text" placeholder='Tìm bằng số vé' /> 
+              <input className='Search__text' type="number" placeholder='Tìm bằng số vé' /> 
               <button className='Search__btn'>
                 <img className='Search__icon' src={search} />
               </button>
