@@ -80,6 +80,24 @@
     color: #1E0D03;
 }
 
+.Semibold-16{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1E0D03;
+    line-height: 26px;
+}
+
+.Text-16{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1E0D03;
+    line-height: 20px;
+}
+
 /* Container for all component */
 .Container{
     position: relative;

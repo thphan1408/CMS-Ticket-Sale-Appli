@@ -26,7 +26,7 @@ export default function Home() {
     labels: ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'CN'],
     datasets: [ 
       {
-        data: [140, 180, 220, 260], 
+        data: [140, 180, 220, 150, 190, 200, 100], 
         backgroundColor: 'rgba(250, 160, 95, 0.16)',
         borderColor: 'rgba(255, 138, 72, 1)',
         tension: .4,

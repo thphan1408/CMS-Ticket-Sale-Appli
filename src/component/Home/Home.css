@@ -57,6 +57,7 @@ a:hover {
 .date-picker2 {
     margin-top: 63px !important;
     margin-left: 32px  !important;
+    margin-bottom: 13px;
 }
 
 /* Chart-family */
@@ -66,6 +67,7 @@ a:hover {
     justify-content: space-evenly;
     text-align: center;
     flex-direction: row;
+    padding-bottom: 53px;
 }
 
 .Sub__content--chart-family{

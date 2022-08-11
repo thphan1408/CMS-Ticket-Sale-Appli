@@ -1,9 +1,10 @@
 .btn{
     position: absolute;
     top: 24%;
-    right: 4%;
-    padding: 11px 24px;
+    right: 0;
+    padding: 11px 0;
     display: flex;
+    margin-right: 24px;
 }
 
 .Print__btn,

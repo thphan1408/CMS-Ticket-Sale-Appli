@@ -1,0 +1,142 @@
+.Slider{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    z-index: 1;
+    border-radius: 24px;
+    margin: 20px 32px 32px 24px;
+    width: 100%;
+}
+
+.Content__slider{
+    margin: 22px 24px;
+}
+
+.Status__ticket{
+    display: flex;
+    margin-left: 24px;
+}
+
+.Status{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    margin-left: 26px;
+}
+
+.radio {
+    margin: 0.5rem;
+}
+
+.radio input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.radio input[type=radio] + .radio-label:before {
+    content: "";
+    background: #FFFFFF;
+    border-radius: 100%;
+    border: 1px solid #27AEF9;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+}
+
+.radio input[type=radio]:checked + .radio-label:before {
+    background-color: #3197EE;
+    box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+  
+/* .radio input[type=radio]:focus + .radio-label:before {
+    outline: none;
+    border-color: #3197EE;
+} */
+  
+/* .radio input[type=radio] + .radio-label:before {
+    box-shadow: inset 0 0 0 4px #f4f4f4;
+    border-color: #b4b4b4;
+    background: #b4b4b4;
+} */
+  
+/* .radio input[type=radio] + .radio-label:empty:before {
+    margin-right: 0;
+  } */
+
+/* Classify */
+.Classify{
+    display: flex;
+    align-items: center;
+    margin: 25px 24px 24px 24px;
+}
+
+.Classify__Content{
+    display: flex;
+    align-items: baseline;
+}
+
+.Classify__sub{
+    opacity: .7;
+    margin-left: 134px;
+}
+
+/* Time */
+.Time{
+    margin-left: 24px;
+}
+
+.Time__from,
+.Time__to{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 48px;
+    margin-bottom: 24px;
+}
+
+/* Button */
+.Find__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Find__btn--btn{
+    border: 1px solid #FF993C;
+    width: 160px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 11px 24px;
+    line-height: 26px;  
+    cursor: pointer;
+    color: #FF993C;
+    margin: 0 10px;
+}
+
+.Find__btn--btn:hover{
+    background-color: #FFB800;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}

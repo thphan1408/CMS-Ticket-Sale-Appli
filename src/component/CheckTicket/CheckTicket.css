@@ -1,3 +1,8 @@
+/* Container */
+.Check__ticket{
+    margin-right: 0;
+}
+
 /* Sub__content */
 .Sub__content{
     position: absolute;
@@ -27,8 +32,8 @@ input[type="number"]{
 .btn{
     position: absolute;
     top: 24%;
-    right: 4%;
-    padding: 11px 24px;
+    right: 0;
+    padding: 11px 0px;
     display: flex;
 }
 
@@ -38,7 +43,7 @@ input[type="number"]{
     cursor: pointer;
     background-color: #FFFFFF;
     border: 1px solid #FF993C;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     border-radius: 6px;
     padding: 11px 24px;
     line-height: 26px;  
@@ -57,3 +62,13 @@ input[type="number"]{
     color: #FFFFFF;
 }
 
+/* Table list check ticket */
+
+.Table__list__check{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+}

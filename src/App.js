@@ -10,6 +10,7 @@ import Manage from "./component/Manage/Manage"
 import CheckTicket from "./component/CheckTicket/CheckTicket";
 import Setting from "./component/Setting/Setting";
 import Footer from "./component/Footer/Footer"
+// import FindTicket from './component/CheckTicket/FindTicket/FindTicket';
 
 const App = () => (
   <div className="container">
@@ -22,6 +23,7 @@ const App = () => (
     
       <Col span={20}>
         <Header />
+        
         <Routes> 
           <Route path="/" element={<Home />}/>
           <Route path="/home" element={<Home />} /> 
@@ -30,8 +32,9 @@ const App = () => (
           <Route path="/setting" element={<Setting />} />
         </Routes>
       </Col>
+
+
     </Row>
-      
   </div>
 );
 
