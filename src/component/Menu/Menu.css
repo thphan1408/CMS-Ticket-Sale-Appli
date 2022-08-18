@@ -41,7 +41,7 @@
 
 .Frame__list  li  a {
     display: block;
-    letter-spacing: 0.015em;
+    /* letter-spacing: 0.015em; */
     color: #1E0D03;
 }
 

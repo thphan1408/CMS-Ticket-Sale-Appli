@@ -72,7 +72,7 @@ const data = [
       gate: 'Cổng 1'
     },
     {
-      key: '1',
+      key: '2',
       number: 2,
       code: 'ALTOJMNB',
       ticketNumber: 236784631642,
@@ -82,7 +82,7 @@ const data = [
       gate: '-'
     },
     {
-      key: '1',
+      key: '3',
       number: 3,
       code: 'ALTQTYJH',
       ticketNumber: 487621489474,

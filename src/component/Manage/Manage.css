@@ -33,13 +33,13 @@
     top: 24%;
     right: 4%;
     padding: 11px 24px;
+    display: flex;
 }
 
-.Filter__list{
-    display: flex;
-    list-style: none;
+/* .Filter__list{
+
     color: #FF993C;
-}
+} */
 
 .Filter__btn,
 .Print__btn{
@@ -50,6 +50,7 @@
     border-radius: 6px;
     padding: 11px 24px;
     line-height: 26px;
+    color: #FF993C;
 }
 
 .Filter__icon{
@@ -99,3 +100,5 @@
     border-color: #FF993C !important;
     color: #FF993C !important;
 }
+
+/* Modal */

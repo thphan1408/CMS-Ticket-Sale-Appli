@@ -1,13 +1,16 @@
-import React from 'react';
-import "./DataManage"
-import "./Manage.css"
+import React, { useState } from 'react';
+import Modal from "./Modal/Modal"
+import DataManage from './DataManage';
 import "../../App.css"
+import "./Manage.css"
+
 // Import icons, images
 import filter from "../../assets/icons/Filter.svg"
 import search from "../../assets/icons/Search.svg"
-import DataManage from './DataManage';
 
 export default function Manage() {
+    const [openModal, setOpenModal] = useState(false);
+
     return (
       <div className='Container'>
         <div className="Navigation__content">
@@ -20,20 +23,16 @@ export default function Manage() {
               </button>
             </div>
 
-
-            <div className="Filter">
-              <ul className='Filter__list'>
-                  <li>
-                    <button className='Filter__btn Bold-18'><img className='Filter__icon' src={filter} />Lọc vé</button>
-                  </li>
-                  <li>
-                    <button className='Print__btn Bold-18'>Xuất file (.csv) </button>
-                  </li>
-              </ul>
+            <div className="btn">
+                <button className='Filter__btn Bold-18' onClick={() => setOpenModal(true)}><img className='Filter__icon' src={filter} />Lọc vé</button>
+                <button className='Print__btn Bold-18'>Xuất file (.csv) </button>
             </div>
           </div>
+
           <DataManage />
         </div>
+
+        { openModal && <Modal onClose={() => setOpenModal(false)}/>}
       </div>
-    )
-  }
+);
+}
