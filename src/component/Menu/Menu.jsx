@@ -6,11 +6,12 @@ import "../../App.css";
 
 // import logo
 import logo from "../../assets/imgs/insight-05.png";
-import icon1 from "../../assets/icons/Vector.svg";
-import icon2 from "../../assets/icons/Vector2.svg";
-import icon3 from "../../assets/icons/Vector3.svg";
-import icon4 from "../../assets/icons/Vector4.svg";
-import copy from "../../assets/icons/Copy.svg"
+import icon1 from "../../assets/icons/home.svg";
+import icon2 from "../../assets/icons/ticket.svg";
+import icon3 from "../../assets/icons/invoice.svg";
+import icon4 from "../../assets/icons/setting.svg";
+import icon5 from "../../assets/icons/list-ul.svg"
+import icon6 from "../../assets/icons/monitor.svg"
 
 export default function menu() {
   return (
@@ -24,22 +25,38 @@ export default function menu() {
         <div className="Menu__list">
           <ul className="Frame__list">
             <li>
+            
                 <NavLink className="Medium-18" to="">
-                    <img className="icon" src={icon1} /> 
-                    Trang chủ
+                <img className="icon" src={icon1} /> 
+                  Trang chủ
                 </NavLink>
             </li>
 
             <li>
-              <NavLink to="/Manage" className="Medium-18"> <img className="icon" src={icon2} /> Quản lý vé </NavLink>
+              <NavLink to="/Manage" className="Medium-18">  
+                <img className="icon" src={icon2} />
+                Quản lý vé 
+              </NavLink>
             </li>
 
             <li>
+              
               <NavLink to="/CheckTicket" className="Medium-18"> <img className="icon" src={icon3} /> Đối soát vé</NavLink>
             </li>
 
-            <li className="Medium-18">
-              <NavLink to="/setting">
+            <li>
+              
+              <NavLink to="#" className="Medium-18"> <img className="icon" src={icon5} /> Danh sách sự kiện</NavLink>
+            </li>
+
+            <li>
+              
+              <NavLink to="#" className="Medium-18"> <img className="icon" src={icon6} /> Quản lý thiết bị</NavLink>
+            </li>
+
+            <li >
+              
+              <NavLink to="/setting" className='Medium-18'>
                 <img className="icon" src={icon4} />
                 Cài đặt
               </NavLink>

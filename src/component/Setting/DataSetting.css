@@ -4,3 +4,7 @@
     color: #FF993C;
     background-color: #FFFFFF;
 }
+
+.ant-table-thead > tr > th{
+    padding: 10px 10px !important;
+}

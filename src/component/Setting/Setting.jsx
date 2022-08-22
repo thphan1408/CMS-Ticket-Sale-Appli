@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import search from "../../assets/icons/Search.svg";
 import "./Setting.css"
 import DataSetting from "./DataSetting";
@@ -6,6 +6,10 @@ import ModalSetting from "./Modal/ModalSetting";
 
 export default function CheckTicket() {
     const [openModal, setOpenModal] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return(
         <div className="Container">

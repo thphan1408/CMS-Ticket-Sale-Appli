@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col } from "antd";
 import { DatePicker, Space } from "antd";
 import "./FindTicket.css"
 
 export default function FindTicket() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return(
     <Col span={8}>
         <div className="Slider">

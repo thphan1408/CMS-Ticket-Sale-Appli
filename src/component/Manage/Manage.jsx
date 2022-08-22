@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 
 import Modal from "./Modal/Modal"
 import DataManage from './DataManage';
@@ -13,16 +12,23 @@ import search from "../../assets/icons/Search.svg"
 export default function Manage() {
     const [openModal, setOpenModal] = useState(false);
 
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
+
     return (
       <div className='Container'>
           <h1 className='Content Bold-36'>Danh sách vé</h1>
             
-          {/* <div className="Event__packages">
-            <NavLink className="Medium-18" to="/Home">
-                    <img className="icon" /> 
-                    Trang chủ
-            </NavLink>
-          </div> */}
+          <div className="Event__packages">
+            <button className="Family Semibold-16">
+                Gói gia đình
+            </button>
+
+            <button className="Event Semibold-16" >
+                Gói sự kiện
+            </button>
+          </div>
 
           <div className="Sub__content">  
             <div className="Search Search--left">

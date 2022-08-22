@@ -1,0 +1,96 @@
+.Modal__event{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    /* align-items: baseline; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    border-radius: 24px;
+}
+
+.Modal__container--event{
+    background-color: #fff;
+    width: 758px;
+    height: 365px;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* Header */
+
+.Header__modal--event{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Body */
+
+.Modal__body--event{
+    margin-left: 32px;
+}
+
+.Number__ticket--event{
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.Title__ticket--event{
+    opacity: .7;
+}
+
+.Num__ticket{
+    margin-left: 140px;
+    opacity: .7;
+}
+
+.Name__ticket--event{
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.Title__name--ticket{
+    opacity: .7;
+}
+
+.Name__ticket{
+    margin-left: 90px;
+    opacity: .7;
+}
+
+.Status__ticket--event{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.Title__status--event{
+    opacity: .7;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.Date__event{
+    margin-left: 78px;
+    opacity: .7;
+}
+
+.Modal__button--event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

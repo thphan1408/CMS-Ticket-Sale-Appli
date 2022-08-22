@@ -1,6 +1,6 @@
 import React, { useState ,useEffect, useRef }from 'react';
 import { DatePicker, Space } from 'antd';
-import { Checkbox, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 import "./Modal.css"
 import "../../../App.css"
 

@@ -80,3 +80,51 @@
     border-color: #FF993C !important;
     color: #FF993C !important;
 }
+
+/* Modal Event Package */
+
+.Event__packages{
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.Family,
+.Event{
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    opacity: .5;
+}
+
+.Event{
+    margin-left: 20px;
+}
+
+.Family,
+.Event:focus{
+    outline: none;
+}
+
+.Family:hover,
+.Event:hover{
+    border-bottom: 4px solid #FF993C;
+    color: #FF993C;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 1;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* Modal Table Button */
+.Action__modal--table{
+    border: none;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

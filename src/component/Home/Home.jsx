@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import { DatePicker, Space } from "antd";
 import { Line } from 'react-chartjs-2';
 import "../Layout/Header.css"
@@ -35,6 +35,11 @@ export default function Home() {
   
     ]
   })
+
+  // Scroll to the top of the page after render
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="Container">

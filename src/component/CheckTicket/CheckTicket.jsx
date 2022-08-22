@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import FindTicket from './FindTicket/FindTicket';
 import DataCheckTicket from './DataCheckTicket';
@@ -13,6 +13,10 @@ import "./CheckTicket.css"
 import search from "../../assets/icons/Search.svg";
 
 export default function CheckTicket() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <Row>
       <Col span={15}>

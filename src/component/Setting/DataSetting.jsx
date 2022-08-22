@@ -66,7 +66,6 @@ function DataSetting (){
     title: 'Action',
     key: 'action',
     render: (_) => (
-      
       <Space size="middle">
         <button className='Update__data' onClick={() => setOpenModal(true)}><img src={update} /> Cập nhật</button>
       </Space>
