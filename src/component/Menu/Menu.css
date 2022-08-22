@@ -65,7 +65,11 @@
 
 .Frame__list > li:hover .Sub__tag {
     display: block;
-    min-width: 0%;
+    /* padding: 15px 15px 15px 24px; */
+    width: 90%;
+    position: absolute;
+    /* top: 80%; */
+    left: 9.8%;
 }
 
 .Frame__list .Sub__tag{
