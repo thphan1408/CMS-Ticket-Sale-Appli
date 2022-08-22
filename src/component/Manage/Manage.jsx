@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
+
 import Modal from "./Modal/Modal"
 import DataManage from './DataManage';
 import "../../App.css"
@@ -13,8 +15,15 @@ export default function Manage() {
 
     return (
       <div className='Container'>
-        <div className="Navigation__content">
           <h1 className='Content Bold-36'>Danh sách vé</h1>
+            
+          {/* <div className="Event__packages">
+            <NavLink className="Medium-18" to="/Home">
+                    <img className="icon" /> 
+                    Trang chủ
+            </NavLink>
+          </div> */}
+
           <div className="Sub__content">  
             <div className="Search Search--left">
               <input className='Search__text' type="number" placeholder='Tìm bằng số vé' /> 
@@ -22,7 +31,7 @@ export default function Manage() {
                 <img className='Search__icon' src={search} />
               </button>
             </div>
-
+            
             <div className="btn">
                 <button className='Filter__btn Bold-18' onClick={() => setOpenModal(true)}><img className='Filter__icon' src={filter} />Lọc vé</button>
                 <button className='Print__btn Bold-18'>Xuất file (.csv) </button>
@@ -30,7 +39,6 @@ export default function Manage() {
           </div>
 
           <DataManage />
-        </div>
 
         { openModal && <Modal onClose={() => setOpenModal(false)}/>}
       </div>

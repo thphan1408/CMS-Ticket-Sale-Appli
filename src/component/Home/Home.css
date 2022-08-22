@@ -4,11 +4,12 @@ a:hover {
 
 .Content{
     padding: 24px 58px;
+    margin-bottom: 0;
 }
 
 /* Chart */
 .Chart {
-    margin: 27px 55px 73px 0px;
+    margin: 8px 55px 73px 0px;
 }
 
 .Header__chart{
@@ -35,11 +36,8 @@ a:hover {
 
 /* Content__family */
 
-.Content__family
-{
-    /* position: absolute;
-    top: 79%;
-    margin-top: 40px; */
+.Content__family{
+
 }
 
 .Content__wapper{

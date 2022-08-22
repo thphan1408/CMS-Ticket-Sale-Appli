@@ -17,7 +17,6 @@ export default function CheckTicket() {
     <Row>
       <Col span={15}>
         <div className='Container Check__ticket'>
-          <div className="Navigation__content">
             <h1 className='Content Bold-36'>Đối soát vé</h1>
             <div className="Sub__content">  
                 <div className="Search Search--left">
@@ -32,9 +31,9 @@ export default function CheckTicket() {
                     <button className='Check__btn'> <span className='Bold-18'>Chốt đối soát</span></button>
                   {/* <button className='Print__btn Bold-18'> <span> Xuất file (.csv) </span>  </button> */}
                 </div>
-                  <DataCheckTicket />
             </div>
-          </div>
+            
+            <DataCheckTicket />
         </div>
       </Col>            
       <FindTicket />

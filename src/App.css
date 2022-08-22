@@ -16,7 +16,7 @@
     --ellipse-3-color: #FF8A48;
 }
 
-body{
+/* body{
     -moz-user-select: none !important;
     -webkit-touch-callout: none!important;
     -webkit-user-select: none!important;
@@ -24,7 +24,7 @@ body{
     -moz-user-select: none!important;
     -ms-user-select: none!important;
     user-select: none!important;
-  }
+  } */
 
 .Bold-18{
     font-family: 'Montserrat';
@@ -41,7 +41,7 @@ body{
     font-weight: 700;
     font-size: 36px;
     line-height: 54px;
-    /* color: #1E0D03; */
+    color: #1E0D03;
 }
 
 .Medium-18{
@@ -110,9 +110,9 @@ body{
 
 /* Container for all component */
 .Container{
-    position: relative;
     background-color: #FFFFFF;
     margin-top: 20px;
+    margin-left: 10px;
     min-height: 1080px;
     margin-right: 32px;
     border-radius: 24px;

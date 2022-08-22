@@ -26,11 +26,14 @@ function Modal( {onClose} ) {
   const clickDisabled = () => {
     setDisabled(!disabled);
   }
+  
   return (
       <div className="Modal">
         <div className="Modal__container" ref={modalRef}>
             <div className="Modal__body">
-                <h1 className='Title Bold-24'>Lọc vé</h1>
+              <div className="Title">
+                <h1 className='Bold-24'>Lọc vé</h1>
+              </div>
                 
                 <div className="Date__form">
                   <div className="Date__from">
@@ -76,73 +79,59 @@ function Modal( {onClose} ) {
                   </div>
                 </div>
                 
-                {/* <div className="Gate__check-in">
+                <div className="Gate__check-in">
                   <h3 className='Semibold-16'>Cổng Check - in</h3>
 
-                <div className="Check__group">
-                  <div className="Check">
-                  <Row>
-                    <Col span={8}>
-                      <div class="Checkbox__check-in">
-                        <label class="Title">Tất cả
-                          <input type="checkbox" onChange={clickDisabled}/>
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                    </Col>
+                  <div className="Check__group">
+                    <Row>
+                      <Col span={8}>
+                        <div class="Checkbox__check-in">
+                          <input id="check-1" name="check" type="checkbox" onChange={clickDisabled} />
+                          <label for="check-1" class="Check__label">Tất cả</label>
+                        </div>
+                      </Col>
 
-                    <Col span={8}>
-                      <div class="Checkbox__check-in">
-                      <label class="Title">One
-                          <input type="checkbox" disabled={disabled}/>
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                    </Col>
+                      <Col span={8}>
+                        <div class="Checkbox__check-in">
+                          <input id="check-2" name="check" type="checkbox" disabled={disabled} />
+                          <label for="check-2" class="Check__label">Cổng 1</label>
+                        </div>
+                      </Col>
 
-                    <Col span={8}>
-                      <div class="Checkbox__check-in">
-                      <label class="Title">One
-                          <input type="checkbox" disabled={disabled}/>
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                    </Col>
+                      <Col span={8}>
+                        <div class="Checkbox__check-in">
+                          <input id="check-3" name="check" type="checkbox" disabled={disabled} />
+                          <label for="check-3" class="Check__label">Cổng 2</label>
+                        </div>
+                      </Col>
 
-                    <Col span={8}>
-                      <div class="Checkbox__check-in">
-                      <label class="Title">One
-                          <input type="checkbox" disabled={disabled}/>
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                    </Col>
+                      <Col span={8}>
+                        <div class="Checkbox__check-in">
+                          <input id="check-4" name="check" type="checkbox" disabled={disabled} />
+                          <label for="check-4" class="Check__label">Cổng 3</label>
+                        </div>
+                      </Col>
 
-                    <Col span={8}>
-                      <div class="Checkbox__check-in">
-                      <label class="Title">One
-                          <input type="checkbox" disabled={disabled}/>
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                    </Col>
+                      <Col span={8}>
+                        <div class="Checkbox__check-in">
+                          <input id="check-5" name="check" type="checkbox" disabled={disabled} />
+                          <label for="check-5" class="Check__label">Cổng 4</label>
+                        </div>
+                      </Col>
 
-                    <Col span={8}>
-                      <div class="Checkbox__check-in">
-                      <label class="Title">One
-                          <input type="checkbox" disabled={disabled}/>
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                    </Col>
-                  </Row>
-                  </div>
+                      <Col span={8}>
+                        <div class="Checkbox__check-in">
+                          <input id="check-6" name="check" type="checkbox" disabled={disabled} />
+                          <label for="check-6" class="Check__label">Cổng 5</label>
+                        </div>
+                      </Col>
+                    </Row>
+                    </div>
                 </div>
-  
-    
-           </div> */}
 
-                <button className="Modal__btn">Lọc</button>
+                <div className="Modal__button">
+                    <button className="Find__btn--modal Bold-18">Lọc</button>
+                </div>
             </div>
         </div>
     </div>

@@ -8,11 +8,13 @@
 
 .Menu{
     position: fixed;
+    height: 100%;
 }
 
 .Menu__list{
     margin-top: 74px;
     padding-left: 33px;
+    padding-right: 23px;
     line-height: 26px;
     width: 252px;
     height: 56px;
@@ -27,10 +29,11 @@
 
 .Frame__list > li {
     display: flex;
-    margin-bottom: 23px;
+    margin-bottom: 8px;
 }
 
 .Frame__list li{
+    width: 100%;
     position: relative;
 }
 
@@ -41,19 +44,22 @@
 
 .Frame__list  li  a {
     display: block;
-    /* letter-spacing: 0.015em; */
     color: #1E0D03;
+    width: 100%;
+    opacity: .6;
 }
 
 
 .Frame__list .Sub__tag li:hover a,
 .Frame__list > li:hover > a{
+    width: 100%;
     color: #fff;
     background-color:#FFB800;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    opacity: 1;
     padding: 15px 16px 15px 24px;
     min-width: 100%;
     font-family: 'Montserrat';
@@ -64,19 +70,19 @@
 }
 
 .Frame__list > li:hover .Sub__tag {
-    display: block;
-    /* padding: 15px 15px 15px 24px; */
-    width: 90%;
+    display: flex;
+    padding: 8px 16px 0px 24px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    width: 100%;
     position: absolute;
-    /* top: 80%; */
-    left: 9.8%;
+    top: 95%;
+    left: 8%;
 }
 
 .Frame__list .Sub__tag{
     display: none;   
-    position: absolute;
-    top: 100%;
-    left: 31.7%;
     list-style: none;
     text-align: center;
 }

@@ -1,0 +1,312 @@
+.Text__edit{
+    opacity: .7;
+    margin: 0;
+}
+
+.Modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    /* align-items: baseline; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    border-radius: 24px;
+}
+
+.Modal__container--setting {
+    background-color: #fff;
+    width: 758px;
+    height: 628px;
+    position: relative;
+    display: flex;
+    border-radius: 16px;
+    /* animation: modalFadeIn ease-in-out .5s; */
+}
+
+.Modal__container .Modal__body{
+    flex: 50%;
+}
+
+.Title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+.Content__modal{
+    margin-left: 32px;
+}
+
+/* Add Ticket */
+
+.Add__ticket{
+
+}
+
+.end{
+    color: #FD5959;
+    margin-right: 4px;
+}
+
+.Input__text{
+    margin-top: 5px;
+    width: 367px;
+    height: 40px;
+    border: 1px solid #A5A8B1;
+    border-radius: 8px;
+}
+
+.Input__text input[type="text"]{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+}
+
+.Input__text input[type="text"]:focus{
+    outline: none;
+}
+
+.Input__text ::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px 16px;
+    color: #A5A8B1;
+    opacity: 0.7;
+}
+
+/* Group date */
+
+.Group__date{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.Application__date{
+
+}
+
+.Expiration__date{
+    margin-left: 39px;
+}
+
+/* Price ticket */
+.Price__ticket{
+    margin-top: 24px;
+}
+
+.Check__group{
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none!important;
+    -webkit-user-select: none!important;
+    -khtml-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
+}
+
+.Check__ticket__price{
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-top: 12px;
+}
+
+label.check__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    margin: 0 8px;
+}
+
+.Check__ticket__price input[type="text"]{
+    background-color: #F1F4F8;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 0 12px;
+    width: 148px;
+    height: 40px;
+}
+
+.Check__ticket__price input[type="text"]::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #A5A8B1;
+    opacity: 0.7;
+}
+
+.Check__ticket__price input[type="text"]:focus{
+    outline: none;
+}
+
+.Check__ticket__price .Label__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    margin: 0 8px;
+}
+
+.Check__ticket__price #price__number_2{
+    width: 72px;
+    height: 40px;
+}
+
+.Check__ticket__price .checkbox__price{
+    -webkit-appearance:none;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 3px solid #27AEF9;
+    border-radius: 4px;
+}
+
+.Check__ticket__price .checkbox__price:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: 6px;
+    height: 14.05px;
+    width: 10.05px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+  }
+
+input[type=checkbox]:checked   {
+    background: #327DFF;
+    outline: none;
+    border: 1px solid rgba(50,125,255,1);
+}
+
+input:focus,input:active {
+	outline: none;
+}
+
+.Apply__status{
+
+}
+
+.Custom__select{
+    margin-top: 5px;
+    width: 176px;
+    height: 40px;
+    border: 1px solid #A5A8B1;
+    border-radius: 8px;
+}
+
+.Custom__select #Select{
+    width: 100%;
+    height: 100%;   
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    background: transparent;
+    background-image: url("../../../assets/icons/arrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 16px;
+    margin-right: 12px;
+    padding-right: 2rem;
+}
+
+
+.Custom__select #Select:focus{
+    border: none;
+    outline: none;
+}
+
+.Notify{
+    display: flex;
+    margin-top: 10px;
+    align-items: baseline;
+}
+
+.Notify__end{
+}
+
+.Notify__text{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.4;
+}
+
+/* Button */
+.Modal__button{
+    
+}
+
+.Cancel__btn,
+.Save__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 24px;
+    gap: 10px;
+    width: 160px;
+    height: 48px;
+    border: 1px solid #FF993C;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin: 20px 24px;
+    color: #FF993C;
+    cursor: pointer;
+}
+
+.Cancel__btn:hover,
+.Save__btn:hover{
+    color: #FFFFFF;
+    background: #FF993C;
+}

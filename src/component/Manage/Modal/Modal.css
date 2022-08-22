@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
+    border-radius: 24px;
 }
 
 .Modal__container {
@@ -72,6 +73,13 @@
     /* align-items: center;
     justify-content: space-evenly; */
     flex-direction: row;
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none!important;
+    -webkit-user-select: none!important;
+    -khtml-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
 }
 
 .Radio__status {
@@ -119,11 +127,101 @@
 }
 
 
-/* Footer */
-.Footer__modal{
-    width: 100%;
+.Check__group{
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none!important;
+    -webkit-user-select: none!important;
+    -khtml-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
+}
+
+.Check__label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    opacity: .7;
+}
+
+.Checkbox__check-in{
+    margin-bottom: 14px;
+    display: grid;
+    grid-template-columns: 24px auto;
+    gap: 8px;
+    transition: all 150ms ease;
+    height: 24px;
+    /* width: 24px; */
+    font-size: 16px;
+}
+
+.Checkbox__check-in input[type="checkbox"]{
+    cursor: pointer;
+    border: 1px solid #27AEF9;
+    background-color: #27AEF9;
+    border-radius: 4px;
+}
+
+/* .Checkbox__check-in input[type="checkbox"]::before{
+    content: "";
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;    
+    border: 1px solid #27AEF9;
+    background-color: #27AEF9;
+} */
+
+/* .Checkbox__check-in input[type="checkbox"]:checked + .Check__label::before{
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    background: #FFFFFF;
+} */
+
+.Checkbox__check-in input[type="checkbox"]:disabled + .Check__label::before{
+    background: #A5A8B1;
+    border: 1px solid #A5A8B1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button */
+.Modal__button{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 26px;
 }
 
+.Find__btn--modal{
+    color: #FF993C;
+    border: 1px solid #FF993C;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 24px;
+    gap: 10px;
+    width: 160px;
+    height: 48px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.Find__btn--modal:hover{
+    color: #FFFFFF;
+    background-color: #FFB800;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}

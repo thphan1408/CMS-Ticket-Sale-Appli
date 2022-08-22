@@ -1,0 +1,113 @@
+import React, { useEffect, useRef, useState} from 'react'
+import "./ModalSetting.css"
+import { DatePicker, Space, TimePicker } from 'antd';
+
+const PickerWithType = ({ type, onChange }) => {
+  if (type === 'time') return <TimePicker onChange={onChange} />;
+  if (type === 'date') return <DatePicker onChange={onChange} />;
+  return <DatePicker picker={type} onChange={onChange} />;
+};
+
+function ModalSetting({onClose}) {
+
+    const modalRef = useRef();
+
+    useEffect(()=>{
+      const clickOutSide = (e) =>{
+        if(modalRef.current && !modalRef.current.contains(e.target)){
+          onClose();
+        }
+      };
+  
+      document.addEventListener("mousedown", clickOutSide)
+  
+      return() => {
+        document.removeEventListener("mousedown", clickOutSide)
+      }
+    }, [onClose]);
+
+    const [type, setType] = useState('time')
+
+  return (
+    <div className='Modal'>
+        <div className="Modal__container--setting" ref={modalRef}>
+            <div className="Modal__body">
+              <div className="Title">
+                <h1 className='Bold-24'>Thêm gói vé</h1>
+              </div>
+
+              <div className="Content__modal">
+                <div className="Add__ticket">
+                  <h3 className='Semibold-16 Text__edit'>Tên gói vé <span className='end Semibold-16'>*</span></h3>
+                  <div className="Input__text">
+                    <input type="text" name='text' placeholder='Nhập tên gói vé'/>
+                  </div>
+                </div>
+
+                <div className="Group__date">
+                  <div className="Application__date">
+                  <h3 className='Semibold-16 Text__edit'>Ngày áp dụng</h3>
+                  <Space>
+                    <DatePicker className='date-picker' placeholder='01/04/2021' />
+                    <PickerWithType type={type} onChange={(value) => console.log(value)} placeholder="hh:mm:ss" />
+                  </Space>
+                  </div>
+
+                  <div className="Expiration__date">
+                    <h3 className='Semibold-16 Text__edit'>Ngày hết hạn</h3>
+                      <Space>
+                        <DatePicker className='date-picker' placeholder='01/04/2021' />
+                        <PickerWithType type={type} onChange={(value) => console.log(value)} placeholder="hh:mm:ss" />
+                      </Space>
+                  </div>
+                </div> 
+
+                <div className="Price__ticket">
+                  <h3 className='Semibold-16 Text__edit'>Giá vé áp dụng</h3>
+
+                  <div className="Check__group">
+                    <div className="Check__ticket__price">
+                      <input type="checkbox" name="check" className="checkbox__price" />
+                      <label htmlFor="" className='check__label'>Vé lẻ (vnđ/vé) với giá</label>
+                      <input type="text" name="text" id="price__number" placeholder='Giá vé'/>
+                      <label htmlFor="" className='Label__text'>/ vé</label>
+                    </div>
+
+                    <div className="Check__ticket__price">
+                      <input type="checkbox" name="check" className="checkbox__price" />
+                      <label htmlFor="" className='check__label'>Combo vé với giá</label>
+                      <input type="text" name="text" id="price__number_1" placeholder='Giá vé'/>
+                      <span className='Label__text'>/</span>
+                      <input type="text" name="text" id="price__number_2" placeholder='Giá vé'/>
+                      <label htmlFor="" className='Label__text'>/ vé</label>
+                    </div>
+                  </div>
+
+                  <div className="Apply__status">
+                    <h3 className='Semibold-16 Text__edit'>Tình trạng</h3>
+                    
+                    <div className="Custom__select">
+                      <select name="Select" id="Select">
+                        <option value="0">Đang áp dụng</option>
+                        <option value="1">Chưa áp dụng</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div className="Notify"> 
+                    <span className='end Semibold-16'>*</span><p className='Notify__end Notify__text'> là thông tin bắt buộc</p>
+                  </div>
+
+                  <div className="Modal__button">
+                    <button className='Cancel__btn Bold-18' onClick={() => onClose(false)}>Hủy</button>
+                    <button className='Save__btn Bold-18'>Lưu</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default ModalSetting

@@ -1,7 +1,8 @@
 /* Header */
 .Header{
     position: relative;
-    padding-top: 1%;
+    padding-top: 17px;
+    margin-left: 10px;
 }
 
 .Header__icon,
@@ -31,7 +32,8 @@
 }
 
 .icon__size--s{
-    width: 20px;
+    width: 24px;
+    height: 24px;
 }
 
 .AccMailNotify{
@@ -93,6 +95,10 @@ input[type="search"]{
     font-size: 18px;
     line-height: 22px;
     color: #1E0D03;
+}
+
+input.Search__text:focus{
+    outline: none;
 }
 
 ::placeholder{

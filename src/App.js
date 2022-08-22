@@ -10,7 +10,6 @@ import Manage from "./component/Manage/Manage"
 import CheckTicket from "./component/CheckTicket/CheckTicket";
 import Setting from "./component/Setting/Setting";
 import Footer from "./component/Footer/Footer"
-// import FindTicket from './component/CheckTicket/FindTicket/FindTicket';
 
 const App = () => (
   <div className="container">
