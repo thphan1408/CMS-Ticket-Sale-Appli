@@ -49,6 +49,17 @@
     opacity: .6;
 }
 
+.Frame__list li a.active{
+    background-color:#FFB800;
+    border-radius: 8px;
+     font-size: 18px;
+     line-height: 24px;
+     Padding: 15px 0px 15px 5px;
+     opacity: 1;
+     color: #fff;
+     font-weight: 700;
+}
+
 
 .Frame__list .Sub__tag li:hover a,
 .Frame__list > li:hover a{

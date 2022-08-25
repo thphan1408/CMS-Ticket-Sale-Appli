@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Modal from "./Modal/Modal"
 import DataManage from './DataManage';
+import { NavLink } from "react-router-dom";
 import "../../App.css"
 import "./Manage.css"
 
@@ -21,13 +22,18 @@ export default function Manage() {
           <h1 className='Content Bold-36'>Danh sách vé</h1>
             
           <div className="Event__packages">
-            <button className="Family Semibold-16">
-                Gói gia đình
-            </button>
-
-            <button className="Event Semibold-16" >
-                Gói sự kiện
-            </button>
+            <ul className='List__packages__event'>
+              <li>
+                <a className="Family Semibold-16">
+                  Gói gia đình
+                </a>
+              </li>
+              <li>
+                <a className="Event Semibold-16" >
+                  Gói sự kiện
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div className="Sub__content">  

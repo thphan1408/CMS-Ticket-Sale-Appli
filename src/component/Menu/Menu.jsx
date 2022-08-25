@@ -25,7 +25,6 @@ export default function menu() {
         <div className="Menu__list">
           <ul className="Frame__list">
             <li>
-            
                 <NavLink className="Medium-18" to="">
                 <img className="icon" src={icon1} /> 
                   Trang chủ
@@ -40,22 +39,18 @@ export default function menu() {
             </li>
 
             <li>
-              
               <NavLink to="/CheckTicket" className="Medium-18"> <img className="icon" src={icon3} /> Đối soát vé</NavLink>
             </li>
 
             <li>
-              
-              <NavLink to="#" className="Medium-18"> <img className="icon" src={icon5} /> Danh sách sự kiện</NavLink>
+              <a className="Medium-18"> <img className="icon" src={icon5} /> Danh sách sự kiện</a>
             </li>
 
             <li>
-              
-              <NavLink to="#" className="Medium-18"> <img className="icon" src={icon6} /> Quản lý thiết bị</NavLink>
+              <a className="Medium-18"> <img className="icon" src={icon6} /> Quản lý thiết bị</a>
             </li>
 
             <li >
-              
               <NavLink to="/setting" className='Medium-18'>
                 <img className="icon" src={icon4} />
                 Cài đặt

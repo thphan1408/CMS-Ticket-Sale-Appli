@@ -81,11 +81,29 @@
     color: #FF993C !important;
 }
 
-/* Modal Event Package */
+/* Link Event Package */
 
 .Event__packages{
     margin-left: 24px;
     margin-bottom: 20px;
+}
+
+.Event__packages ul{
+    display: flex;
+    list-style: none;
+}
+
+.List__packages__event li a.active{
+    border-bottom: 4px solid #FF993C;
+    color: #FF993C;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 1;
+    text-align: center;
+    padding-bottom: 5px;
 }
 
 .Family,
@@ -100,10 +118,10 @@
     margin-left: 20px;
 }
 
-.Family,
+/* .Family,
 .Event:focus{
     outline: none;
-}
+} */
 
 .Family:hover,
 .Event:hover{
