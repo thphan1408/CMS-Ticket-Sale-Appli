@@ -1,6 +1,6 @@
 import React from 'react'
 import { Table, Tag } from 'antd';
-import "./Checkticket.css"
+import "./CheckTicket.css"
 
 const columns = [
   {
